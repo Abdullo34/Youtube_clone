@@ -18,7 +18,6 @@
 
  body {
      font-family: 'Poppins', sans-serif;
-     background-color: #f1f1f1;
      min-height: 100vh;
      min-height: 100dvh;
  }
@@ -36,7 +35,10 @@
      width: 250px;
      height: 100vh;
      border: 1px solid var(--line-clr);
-     padding: min(30px, 7%);
+     padding: 10px 0px;
+     position: fixed;
+     top: 0;
+     overflow-y: scroll;
  }
 
  #sidebar .logo a {
@@ -53,6 +55,79 @@
      margin-left: 10px;
  }
 
+ #sidebar .logo+ul {
+     margin-top: 15px;
+ }
+
+
+ #sidebar ul,
+ .logo {
+     padding: 0px 0px 0px 10px;
+ }
+
  #sidebar ul {
      list-style: none;
+ }
+
+ #sidebar ul li {
+     border-radius: .8em;
+     border: 1px solid red;
+     padding-left: 5px;
+     margin: 5px 0px;
+
+ }
+
+ #sidebar ul li a {
+     text-decoration: none;
+     color: #000;
+     /* border: 1px solid red; */
+     padding: 5px 0px;
+     display: grid;
+     grid-template-columns: 30px auto;
+     align-items: center;
+     grid-gap: .8em;
+     font-size: 15px;
+ }
+
+ #sidebar ul li svg {
+     width: 30px;
+     height: 30px;
+     fill: black;
+ }
+
+
+ #sidebar .section_ul,
+ #sidebar .section_ul {
+     border-top: 1px solid #ccc;
+     padding: 6px 0px;
+ }
+
+ #sidebar .section_ul .section_title {
+     /* padding-left: 10px; */
+     font-weight: 500;
+     font-size: 20px;
+     margin-left: 10px;
+ }
+
+ .section_title a {
+     padding-left: 10px;
+     text-decoration: none;
+     display: inline-flex;
+     align-items: center;
+     color: black;
+ }
+
+ .section_title a span {
+     font-size: 20px;
+ }
+
+ .section_title a svg {
+     width: 15px;
+     height: 15px;
+     margin-left: 5px;
+     fill: black;
+ }
+
+ #sidebar ul li:hover {
+     background: #f1f1f1;
  }
