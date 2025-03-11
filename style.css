@@ -27,15 +27,92 @@
      height: 100vh;
  }
 
- .main .navbar {
+
+ .main .nav {
      width: 100%;
-     height: 70px;
-     border: 1px solid var(--line-clr);
+     border: 1px solid black;
+     padding: 10px 15px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .nav .logo {
+     width: 15%;
+     height: 50px;
+     display: flex;
+     align-items: center;
+     border: 1px solid black;
+ }
+
+ .nav .logo svg {
+     width: 30px;
+     height: 30px;
  }
 
 
+ .logo img {
+     width: 100px;
+     height: inherit;
+     margin: 0px 0px -7px 10px;
+ }
+
+ .nav .search_section {
+     width: 40%;
+     height: 50px;
+     /* border: 1px solid red; */
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
 
 
+ .search_section .search_input {
+     width: 75%;
+     height: 40px;
+     /* border: 1px solid #000; */
+     display: flex;
+     align-items: center;
+     border-radius: 30px;
+ }
+
+ .search_input input {
+     width: calc(100% - 50px);
+     height: inherit;
+     border-radius: 30px 0px 0px 30px;
+     text-indent: 30px;
+     font-size: 18px;
+ }
+
+ .search_input input:focus {
+     outline: 1px solid #5e63ff;
+ }
+
+ .search_input button {
+     width: 50px;
+     height: inherit;
+     text-align: center;
+     background: none;
+     font-size: 20px;
+     border-radius: 0px 30px 30px 0px;
+     border-left: none;
+ }
+
+ .mic_icon {
+     width: 35px;
+     height: 35px;
+     border-radius: 50%;
+     font-size: 18px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #b0bac1;
+     transition: .5ms ease-in-out;
+ }
+
+ .mic_icon:hover {
+    background-color: #D9D9D9;
+ }
  .container {
      width: 100%;
      height: 100vh;
@@ -144,12 +221,4 @@
 
  #sidebar ul li:hover {
      background: #f1f1f1;
- }
-
-
- #sidebar h3 {
-     font-size: 40px;
-     font-weight: 500;
-     color: var(--text-clr);
-     margin-left: 10px;
  }
