@@ -63,12 +63,11 @@
      /* border: 1px solid red; */
      display: flex;
      align-items: center;
-     justify-content: space-between;
  }
 
 
  .search_section .search_input {
-     width: 75%;
+     width: 80%;
      height: 40px;
      /* border: 1px solid #000; */
      display: flex;
@@ -99,8 +98,8 @@
  }
 
  .mic_icon {
-     width: 35px;
-     height: 35px;
+     width: 40px;
+     height: 40px;
      border-radius: 50%;
      font-size: 18px;
      display: flex;
@@ -108,11 +107,13 @@
      justify-content: center;
      background: #b0bac1;
      transition: .5ms ease-in-out;
+     margin-left: 15px;
  }
 
  .mic_icon:hover {
-    background-color: #D9D9D9;
+     background-color: #D9D9D9;
  }
+
  .container {
      width: 100%;
      height: 100vh;
